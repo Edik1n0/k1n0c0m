@@ -4,4 +4,28 @@ body {
   color: #fff;
 }
 
+a {
+  color: #fff;
+  text-decoration: none;
+}
+a:hover {
+  transition: all 0.4s;
+  color: #740000;
+  text-decoration: none;
+}
+
+.ados {
+  color: #212529;
+  text-decoration: none;
+}
+.ados:hover {
+  transition: all 0.4s;
+  color: #740000;
+  text-decoration: none;
+}
+
+.logo-menu {
+  width: 120px;
+}
+
 /*# sourceMappingURL=estilos.css.map */

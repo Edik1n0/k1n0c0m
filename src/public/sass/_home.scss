@@ -3,3 +3,27 @@ body {
     width: auto;
     color: $bl;
 }
+
+a {
+    color: $bl;
+    text-decoration: none;
+    &:hover {
+        transition: all .4s;
+        color: $red;
+        text-decoration: none;
+    }
+}
+
+.ados {
+    color: $gris;
+    text-decoration: none;
+    &:hover {
+        transition: all .4s;
+        color: $red;
+        text-decoration: none;
+    }
+}
+
+.logo-menu {
+    width: 120px;
+}
