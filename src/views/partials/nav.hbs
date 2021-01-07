@@ -13,14 +13,24 @@
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav" style="margin-left: auto;">
                     <a class="nav-link active" aria-current="page" href="/">Inicio</a>
-                    <a class="nav-link" href="#">Nosotros</a>
-                    <a class="nav-link" href="#">Servicios</a>
-                    <a class="nav-link" href="#">Contacto</a>
+                    <a class="nav-link" href="/nosotros">Nosotros</a>
+                    <a class="nav-link" href="/servicios">Servicios</a>
+                    <a class="nav-link" href="/contacto">Contacto</a>
                     <div class="users__menu">
+
+                        <div class="dropdown">
+                            <button class="btn btn-dark dropdown-toggle" type="button" id="dropdownMenuButton"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                <img class="icono__iniciar" src="/img/iniciar.png" alt="">
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <li><a class="dropdown-item" href="/links">Mi cuenta</a></li>
+                                <li><a class="dropdown-item" href="/links/add">Solicitar</a></li>
+                            </ul>
+                        </div>
+
                         <a href="#">
-                            <img class="icono__iniciar" src="/img/iniciar.png" alt="">
-                        </a>
-                        <a href="#">
+                            
                             <img class="icono__registrar" src="/img/register.png" alt="">
                         </a>
                     </div>
