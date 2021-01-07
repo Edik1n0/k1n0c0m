@@ -3,11 +3,31 @@ body {
     color: $bl;
 }
 
+h1 {
+    font-size: 34px;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+h3 {
+    font-size: 26px;
+}
+
+h4 {
+    font-size: 24px;
+}
+
+h5 {
+    font-size: 20px;
+}
+
 a {
     color: $bl;
     text-decoration: none;
     &:hover {
-        transition: all .4s;
+        transition: all 0.4s;
         color: $red;
         text-decoration: none;
     }
@@ -17,7 +37,7 @@ a {
     color: $gris;
     text-decoration: none;
     &:hover {
-        transition: all .4s;
+        transition: all 0.4s;
         color: $red;
         text-decoration: none;
     }
@@ -25,4 +45,55 @@ a {
 
 .logo-menu {
     width: 120px;
+}
+
+.intro {
+    padding: 60px 20px 20px 20px;
+    .container {
+        display: flex;
+        justify-content: center;
+        .intro__img {
+            img {
+                width: 400px;
+            }
+        }
+
+        .intro__txt {
+            width: 400px;
+            padding: 20px 20px 20px 20px;
+            z-index: 1;
+        }
+    }
+}
+
+.users__menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .icono__iniciar {
+        height: 20px;
+        margin-left: 12px;
+        &:hover {
+            transition: all .6s;
+            opacity: 80%;
+        }
+    }
+
+    .icono__registrar {
+        height: 22px;
+        margin-left: 12px;
+        &:hover {
+            transition: all .6s;
+            opacity: 80%;
+        }
+    }
+}
+
+.fondo__trans {
+    opacity: 80%;
+    width: 100%;
+    margin-top: -240px;
+    z-index: 0;
+    position: absolute;
 }

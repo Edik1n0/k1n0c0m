@@ -1,6 +1,76 @@
+.footer {
+  padding: 20px 120px 20px 0px;
+}
+.footer .container {
+  display: flex;
+  justify-content: space-around;
+}
+.footer .container .footer__section {
+  text-align: center;
+}
+.footer .container .footer__section .footer__section--footer .section--social {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+.footer .container .footer__section .footer__section--footer .section--social li .social--link img {
+  width: 60px;
+  margin: 8px;
+}
+.footer .container .footer__section .footer__section--footer .section--social li .social--link img:hover {
+  transition: all 0.6s;
+  opacity: 80%;
+}
+.footer .container .footer__section .footer__section--body {
+  text-align: left;
+  display: flex;
+}
+.footer .container .footer__section .footer__section--body ul {
+  list-style: none;
+}
+.footer .container .footer__section .footer__section--body .link__logo--footer .logo__footer {
+  width: 120px;
+}
+.footer .container .footer__section .footer__section--title {
+  margin-bottom: 20px;
+}
+
+.highlights {
+  margin-top: 120px;
+}
+.highlights .high__body {
+  margin-top: 60px;
+  display: flex;
+  text-align: center;
+  justify-content: space-around;
+}
+.highlights .high__body .high__one, .highlights .high__body .high__two, .highlights .high__body .high__three {
+  width: 20%;
+}
+
 body {
   background: #212529;
   color: #fff;
+}
+
+h1 {
+  font-size: 34px;
+}
+
+h2 {
+  font-size: 30px;
+}
+
+h3 {
+  font-size: 26px;
+}
+
+h4 {
+  font-size: 24px;
+}
+
+h5 {
+  font-size: 20px;
 }
 
 a {
@@ -25,6 +95,52 @@ a:hover {
 
 .logo-menu {
   width: 120px;
+}
+
+.intro {
+  padding: 60px 20px 20px 20px;
+}
+.intro .container {
+  display: flex;
+  justify-content: center;
+}
+.intro .container .intro__img img {
+  width: 400px;
+}
+.intro .container .intro__txt {
+  width: 400px;
+  padding: 20px 20px 20px 20px;
+  z-index: 1;
+}
+
+.users__menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.users__menu .icono__iniciar {
+  height: 20px;
+  margin-left: 12px;
+}
+.users__menu .icono__iniciar:hover {
+  transition: all 0.6s;
+  opacity: 80%;
+}
+.users__menu .icono__registrar {
+  height: 22px;
+  margin-left: 12px;
+}
+.users__menu .icono__registrar:hover {
+  transition: all 0.6s;
+  opacity: 80%;
+}
+
+.fondo__trans {
+  opacity: 80%;
+  width: 100%;
+  margin-top: -240px;
+  z-index: 0;
+  position: absolute;
 }
 
 /*# sourceMappingURL=estilos.css.map */

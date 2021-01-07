@@ -1,0 +1,14 @@
+.highlights {
+    margin-top: 120px;
+
+    .high__body {
+        margin-top: 60px;
+        display: flex;
+        text-align: center;
+        justify-content: space-around;
+
+        .high__one, .high__two, .high__three {
+            width: 20%;
+        }
+    }
+}
