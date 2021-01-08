@@ -1,6 +1,7 @@
 .footer {
   padding: 20px 120px 20px 0px;
   margin-top: 60px;
+  position: relative;
 }
 .footer .container {
   display: flex;
@@ -38,15 +39,59 @@
 
 .highlights {
   margin-top: 120px;
+  position: relative;
 }
-.highlights .high__body {
-  margin-top: 60px;
+.highlights .riel__serv {
+  margin-top: 80px;
+}
+.highlights .riel__serv .container {
   display: flex;
+  justify-content: space-evenly;
   text-align: center;
-  justify-content: space-around;
 }
-.highlights .high__body .high__one, .highlights .high__body .high__two, .highlights .high__body .high__three {
+.highlights .riel__serv .container .serv__one {
   width: 20%;
+}
+.highlights .riel__serv .container .serv__one .serv__img .serv__img--item {
+  width: 60px;
+  margin: 10px;
+}
+.highlights .otc {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.inner__con {
+  width: 100%;
+}
+
+.claims {
+  margin-top: 120px;
+  position: relative;
+}
+.claims .container {
+  display: block;
+}
+.claims .container .claims__fig {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 80px;
+}
+.claims .container .claims__fig .claim-a {
+  width: 20%;
+  text-align: center;
+  cursor: pointer;
+}
+.claims .container .claims__fig .claim-a .img__claim {
+  width: 80px;
+}
+.claims .container .claims__fig .claim-a .txt__claim {
+  margin-top: 20px;
+  opacity: 0%;
+}
+.claims .container .claims__fig .claim-a:hover .txt__claim {
+  transition: all 0.6s;
+  opacity: 100%;
 }
 
 body {
@@ -84,6 +129,13 @@ a:hover {
   text-decoration: none;
 }
 
+.backg {
+  width: 100%;
+  opacity: 20%;
+  position: absolute;
+  z-index: 0;
+}
+
 .ados {
   color: #212529;
   text-decoration: none;
@@ -105,8 +157,12 @@ a:hover {
   display: flex;
   justify-content: center;
 }
+.intro .container .intro__img {
+  z-index: 1;
+}
 .intro .container .intro__img img {
   width: 400px;
+  z-index: 1;
 }
 .intro .container .intro__txt {
   width: 400px;
@@ -136,12 +192,35 @@ a:hover {
   opacity: 80%;
 }
 
-.fondo__trans {
+.solicitud {
+  margin-top: 80px;
+  position: relative;
+}
+.solicitud .container .sol__body {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 80px;
+}
+.solicitud .container .sol__body .body__section {
+  width: 30%;
+  text-align: center;
+}
+.solicitud .container .sol__body .body__section a .sol__img {
+  margin: 20px;
   opacity: 80%;
-  width: 100%;
-  margin-top: -240px;
-  z-index: 0;
-  position: absolute;
+}
+.solicitud .container .sol__body .body__section a .sol__img:hover {
+  transition: all 0.4s;
+  opacity: 100%;
+}
+
+.slogan {
+  text-align: center;
+  margin-top: 120px;
+  position: relative;
+}
+.slogan .container .slogan__txt {
+  font-size: 36px;
 }
 
 /*# sourceMappingURL=estilos.css.map */
