@@ -16,23 +16,27 @@
                     <a class="nav-link" href="/nosotros">Nosotros</a>
                     <a class="nav-link" href="/servicios">Servicios</a>
                     <a class="nav-link" href="/contacto">Contacto</a>
-                    <div class="users__menu">
 
+                    <div class="users__menu">
+                        {{#if user}}
                         <div class="dropdown">
                             <button class="btn btn-dark dropdown-toggle" type="button" id="dropdownMenuButton"
                                 data-bs-toggle="dropdown" aria-expanded="false">
                                 <img class="icono__iniciar" src="/img/iniciar.png" alt="">
                             </button>
                             <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <li><a class="dropdown-item" href="/profile">Perfil</a></li>
                                 <li><a class="dropdown-item" href="/links">Mi cuenta</a></li>
                                 <li><a class="dropdown-item" href="/links/add">Solicitar</a></li>
+                                <li><a class="dropdown-item" href="/logout">Cerrar sesión</a></li>
                             </ul>
                         </div>
-
-                        <a href="#">
-                            
+                        {{else}}
+                        <a href="/signin"><img class="icono__iniciar" src="/img/iniciar.png" alt=""></a>
+                        <a href="/signup">
                             <img class="icono__registrar" src="/img/register.png" alt="">
                         </a>
+                        {{/if}}
                     </div>
                 </div>
             </div>
