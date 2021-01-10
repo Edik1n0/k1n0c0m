@@ -1,29 +1,69 @@
 .highlights {
     margin-top: 80px;
     position: relative;
-    .riel__serv {
-        margin-top: 80px;
-        .container {
-            display: flex;
-            justify-content: space-evenly;
-            text-align: center;
-    
-            .serv__one {
-                width: 20%;
-    
-                .serv__img {
-                    .serv__img--item {
-                        width: 60px;
-                        margin: 10px;
-                    }
+
+    .container {
+        .high__mob {
+            display: none;
+        }
+
+        .high__desk {
+            .carousel {
+                .carousel-inner {
+                    .carousel-item {
+                        .riel__serv {
+                            margin-top: 80px;
+                            .container {
+                                display: flex;
+                                justify-content: space-evenly;
+                                text-align: center;
                     
+                                .serv__one {
+                                    width: 20%;
+                    
+                                    .serv__img {
+                                        .serv__img--item {
+                                            width: 60px;
+                                            margin: 10px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
                 }
             }
         }
     }
-    
+
     .otc {
         text-align: center;
         margin-top: 40px;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 374px) {
+    .highlights {
+        .container {
+
+            .high__title {
+                text-align: center;
+            }
+
+            .high__desk {
+                display: none;
+            }
+
+            .high__mob {
+                display: block;
+                text-align: center;
+                margin-top: 40px;
+
+                img {
+                    width: 60px;
+                    margin: 20px;
+                }
+            }
+        }
     }
 }

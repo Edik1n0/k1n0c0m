@@ -51,3 +51,127 @@
         }
     }
 }
+
+@media (min-width: 320px) and (max-width: 374px) {
+    .inner__con {
+        display: none;
+    }
+    
+    .ser {
+        .container {
+            text-align: center;
+
+            .ser__body {
+                .container {
+                    .basics {
+                        text-align: center;
+                    }
+
+                    .ser__item {
+                        display: block;
+
+                        .serv__img {
+                            img {
+                                width: 100%;
+                            }
+                        }
+
+                        .serv__txt {
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 375px) and (max-width: 409px) {
+    .ser {
+        .container {
+            text-align: center;
+
+            .ser__body {
+                .container {
+                    .basics {
+                        text-align: center;
+                    }
+
+                    .ser__item {
+                        display: block;
+
+                        .serv__img {
+                            img {
+                                width: 100%;
+                            }
+                        }
+
+                        .serv__txt {
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 410px) and (max-width: 539px) {
+    .ser {
+        .container {
+            text-align: center;
+
+            .ser__body {
+                .container {
+                    .basics {
+                        text-align: center;
+                    }
+
+                    .ser__item {
+                        display: block;
+
+                        .serv__img {
+                            img {
+                                width: 100%;
+                            }
+                        }
+
+                        .serv__txt {
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 540px) and (max-width: 767px) {
+    .ser {
+        .container {
+            text-align: center;
+
+            .ser__body {
+                .container {
+                    .basics {
+                        text-align: center;
+                    }
+
+                    .ser__item {
+                        display: block;
+
+                        .serv__img {
+                            img {
+                                width: 100%;
+                            }
+                        }
+
+                        .serv__txt {
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

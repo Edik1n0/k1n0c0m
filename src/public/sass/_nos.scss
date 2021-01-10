@@ -3,6 +3,10 @@
     position: relative;
 }
 
+.inner__mob {
+    display: none;
+}
+
 .nos {
     margin-top: 80px;
     position: relative;
@@ -51,6 +55,108 @@
                 .aliance {
                     p {
                         margin-top: 40px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 320px) and (max-width: 374px) {
+    .inner__nos {
+        display: none;
+    }
+
+    .inner__mob {
+        display: block;
+        width: 100%;
+        position: relative;
+    }
+
+    .nos {
+        .container {
+            .nos__body {
+                .nos__body--item {
+                    text-align: center;
+
+                    .item--body {
+                        display: block;
+                        img {
+                            width: 90%;
+                        }
+                        p {
+                            width: 100%;
+                            text-align: center;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 375px) and (max-width: 409px) {
+    .nos {
+        .container {
+            .nos__body {
+                .nos__body--item {
+                    text-align: center;
+
+                    .item--body {
+                        display: block;
+                        img {
+                            width: 90%;
+                        }
+                        p {
+                            width: 100%;
+                            text-align: center;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 410px) and (max-width: 539px) {
+    .nos {
+        .container {
+            .nos__body {
+                .nos__body--item {
+                    text-align: center;
+
+                    .item--body {
+                        display: block;
+                        img {
+                            width: 90%;
+                        }
+                        p {
+                            width: 100%;
+                            text-align: center;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 540px) and (max-width: 767px) {
+    .nos {
+        .container {
+            .nos__body {
+                .nos__body--item {
+                    text-align: center;
+
+                    .item--body {
+                        display: block;
+                        img {
+                            width: 90%;
+                        }
+                        p {
+                            width: 100%;
+                            text-align: center;
+                        }
                     }
                 }
             }

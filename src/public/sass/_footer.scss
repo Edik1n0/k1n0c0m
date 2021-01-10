@@ -54,3 +54,31 @@
         position: relative;
     }
 }
+
+@media (min-width: 320px) and (max-width: 374px) {
+    .container {
+        .footer {
+            padding: 10px;
+            text-align: center;
+            ul {
+                padding: 0px;
+            }
+            
+            .container {
+                display: block;
+                .footer__section {
+                    .footer__section--body {
+                        display: block;
+                        text-align: center;
+                    }
+
+                    .footer__section--footer {
+                        .section--social {
+                            display: block;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

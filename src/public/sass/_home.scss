@@ -33,11 +33,19 @@ a {
     }
 }
 
+.carousel__mob {
+    display: none;
+}
+
 .backg {
     width: 100%;
     opacity: 20%;
     position: absolute;
     z-index: 0;
+}
+
+.backg__mobile {
+    display: none;
 }
 
 .inner__con {
@@ -122,7 +130,7 @@ a {
                         margin: 20px;
                         opacity: 80%;
                         &:hover {
-                            transition: all .4s;
+                            transition: all 0.4s;
                             opacity: 100%;
                         }
                     }
@@ -139,6 +147,151 @@ a {
     .container {
         .slogan__txt {
             font-size: 36px;
+        }
+    }
+}
+
+@media (min-width: 320px) and (max-width: 374px) {
+
+    .carousel__desk {
+        display: none;
+    }
+
+    .carousel__mob {
+        display: block;
+    }
+
+    .backg {
+        display: none;
+    }
+
+    .backg__mobile {
+        display: block;
+        width: 100%;
+        opacity: 20%;
+        position: absolute;
+        z-index: 0;
+    }
+
+    .intro {
+        position: relative;
+        text-align: center;
+        .container {
+            display: block;
+            .intro__img {
+                img {
+                    width: 240px;
+                }
+            }
+
+            .intro__txt {
+                width: 240px;
+            }
+        }
+    }
+
+    .solicitud {
+        .container {
+            .sol__body {
+                display: block;
+
+                .body__section {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 375px) and (max-width: 409px) {
+    .intro {
+        position: relative;
+        text-align: center;
+        .container {
+            display: block;
+            .intro__img {
+                img {
+                    width: 240px;
+                }
+            }
+
+            .intro__txt {
+                width: 240px;
+            }
+        }
+    }
+
+    .solicitud {
+        .container {
+            .sol__body {
+                display: block;
+
+                .body__section {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 410px) and (max-width: 539px) {
+    .intro {
+        position: relative;
+        text-align: center;
+        .container {
+            display: block;
+            .intro__img {
+                img {
+                    width: 240px;
+                }
+            }
+
+            .intro__txt {
+                width: 240px;
+            }
+        }
+    }
+
+    .solicitud {
+        .container {
+            .sol__body {
+                display: block;
+
+                .body__section {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 540px) and (max-width: 767px) {
+    .intro {
+        position: relative;
+        text-align: center;
+        .container {
+            display: block;
+            .intro__img {
+                img {
+                    width: 240px;
+                }
+            }
+
+            .intro__txt {
+                width: 240px;
+            }
+        }
+    }
+
+    .solicitud {
+        .container {
+            .sol__body {
+                display: block;
+
+                .body__section {
+                    width: 100%;
+                }
+            }
         }
     }
 }
