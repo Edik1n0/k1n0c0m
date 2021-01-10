@@ -1,9 +1,9 @@
 module.exports = {
     // database: {
-    //     host: 'localhost',
-    //     user: 'root',
-    //     password: '',
-    //     database: 'db_users'
+    // host: 'localhost',
+    // user: 'root',
+    // password: '',
+    // database: 'db_users'
     // }
 
     database: {

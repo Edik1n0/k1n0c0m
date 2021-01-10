@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js"
+    "start": "node src"
   },
   "keywords": [],
   "author": "",
@@ -21,6 +21,7 @@
     "mysql": "^2.18.1",
     "passport": "^0.4.1",
     "passport-local": "^1.0.0",
+    "pg": "^8.5.1",
     "timeago.js": "^4.0.2"
   },
   "devDependencies": {
