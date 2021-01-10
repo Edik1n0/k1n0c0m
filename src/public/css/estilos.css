@@ -1,44 +1,48 @@
-.footer {
+.container .footer {
   padding: 20px 120px 20px 0px;
   margin-top: 60px;
   position: relative;
 }
-.footer .container {
+.container .footer .container {
   display: flex;
   justify-content: space-around;
 }
-.footer .container .footer__section {
+.container .footer .container .footer__section {
   text-align: center;
 }
-.footer .container .footer__section .footer__section--footer .section--social {
+.container .footer .container .footer__section .footer__section--footer .section--social {
   list-style: none;
   display: flex;
   justify-content: space-between;
 }
-.footer .container .footer__section .footer__section--footer .section--social li .social--link img {
+.container .footer .container .footer__section .footer__section--footer .section--social li .social--link img {
   width: 60px;
   margin: 8px;
 }
-.footer .container .footer__section .footer__section--footer .section--social li .social--link img:hover {
+.container .footer .container .footer__section .footer__section--footer .section--social li .social--link img:hover {
   transition: all 0.6s;
   opacity: 80%;
 }
-.footer .container .footer__section .footer__section--body {
+.container .footer .container .footer__section .footer__section--body {
   text-align: left;
   display: flex;
 }
-.footer .container .footer__section .footer__section--body ul {
+.container .footer .container .footer__section .footer__section--body ul {
   list-style: none;
 }
-.footer .container .footer__section .footer__section--body .link__logo--footer .logo__footer {
+.container .footer .container .footer__section .footer__section--body .link__logo--footer .logo__footer {
   width: 120px;
 }
-.footer .container .footer__section .footer__section--title {
+.container .footer .container .footer__section .footer__section--title {
   margin-bottom: 20px;
+}
+.container .footer__right {
+  text-align: center;
+  position: relative;
 }
 
 .highlights {
-  margin-top: 120px;
+  margin-top: 80px;
   position: relative;
 }
 .highlights .riel__serv {
@@ -67,7 +71,7 @@
 }
 
 .nos {
-  margin-top: 120px;
+  margin-top: 80px;
   position: relative;
 }
 .nos .container .nos__header {
@@ -109,9 +113,47 @@
   margin-top: 40px;
 }
 
-.inner__con {
-  width: 100%;
+.ser {
+  margin-top: 80px;
   position: relative;
+}
+.ser .container .ser__header {
+  text-align: center;
+}
+.ser .container .ser__header p {
+  margin-top: 16px;
+}
+.ser .container .ser__body {
+  margin-top: 80px;
+}
+.ser .container .ser__body .container .ser__item {
+  margin-top: 60px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.ser .container .ser__body .container .ser__item .serv__img {
+  position: relative;
+}
+.ser .container .ser__body .container .ser__item .serv__img img {
+  width: 520px;
+}
+.ser .container .ser__body .container .ser__item .serv__txt {
+  display: block;
+  width: 50%;
+}
+.ser .container .ser__body .container .ser__item .serv__txt .serv__icons img {
+  height: 40px;
+  margin: 20px;
+}
+.ser .container .ser__body .container .basics {
+  margin-top: 60px;
+}
+.ser .container .ser__body .container .serv__end {
+  margin-top: 80px;
+  text-align: center;
+  width: 40%;
+  margin-left: 30%;
 }
 
 .claims {
@@ -185,6 +227,11 @@ a:hover {
   z-index: 0;
 }
 
+.inner__con {
+  position: relative;
+  width: 100%;
+}
+
 .ados {
   color: #212529;
   text-decoration: none;
@@ -201,6 +248,7 @@ a:hover {
 
 .intro {
   padding: 60px 20px 20px 20px;
+  margin-top: 40px;
 }
 .intro .container {
   display: flex;
