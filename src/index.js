@@ -7,6 +7,14 @@ const session = require('express-session');
 const mySQLStore = require('express-mysql-session');
 const passport = require('passport');
 
+const { Pool } = require('pg');
+const pool = new Pool({
+  connectionString: process.env.DATABASE_URL,
+  ssl: {
+    rejectUnauthorized: false
+  }
+}); //Ojo aquí
+
 const { database } = require('./keys');
 
 //Inicializar
