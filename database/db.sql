@@ -15,4 +15,11 @@
 -- ALTER TABLE users
 --     MODIFY id INT(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT = 2;
 
--- DESCRIBE users; 
+-- DESCRIBE users;
+
+-- create table links(
+--     id int(11),
+--     username varchar(16),
+--     password varchar(60),
+--     fullname varchar(100)
+-- );
