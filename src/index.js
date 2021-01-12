@@ -7,14 +7,6 @@ const session = require('express-session');
 const mySQLStore = require('express-mysql-session');
 const passport = require('passport');
 
-const { Pool } = require('pg');
-const pool = new Pool({
-  connectionString: process.env.DATABASE_URL,
-  ssl: {
-    rejectUnauthorized: false
-  }
-}); //Ojo aquí
-
 const { database } = require('./keys');
 
 //Inicializar
@@ -25,34 +17,34 @@ require('./lib/passport');
 app.set('port', process.env.DATABASE_URL || 4000);
 app.set('views', path.join(__dirname, 'views'));
 app.engine('.hbs', exphbs({
-    defaultLayout: 'main',
-    layoutsDir: path.join(app.get('views'), 'layouts'),
-    partialsDir: path.join(app.get('views'), 'partials'),
-    extname: '.hbs',
-    helpers: require('./lib/handlebars')
+  defaultLayout: 'main',
+  layoutsDir: path.join(app.get('views'), 'layouts'),
+  partialsDir: path.join(app.get('views'), 'partials'),
+  extname: '.hbs',
+  helpers: require('./lib/handlebars')
 }));
 app.set('view engine', '.hbs');
 
 //Middleware
 app.use(session({
-    secret: 'k1nocomhandlebarssession',
-    resave: false,
-    saveUninitialized: false,
-    store: new mySQLStore(database)
+  secret: 'k1nocomhandlebarssession',
+  resave: false,
+  saveUninitialized: false,
+  // store: new mySQLStore(database)
 }));
 app.use(flash());
 app.use(morgan('dev'));
-app.use(express.urlencoded({extended: false}));
+app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
 app.use(passport.initialize());
 app.use(passport.session());
 
 //Globales
 app.use((req, res, next) => {
-    app.locals.success = req.flash('success');
-    app.locals.message = req.flash('message');
-    app.locals.user = req.user;
-    next();
+  app.locals.success = req.flash('success');
+  app.locals.message = req.flash('message');
+  app.locals.user = req.user;
+  next();
 });
 
 //Routes
@@ -65,5 +57,5 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 //Starting
 app.listen(app.get('port'), () => {
-    console.log('Server on port', app.get('port'));
+  console.log('Server on port', app.get('port'));
 });

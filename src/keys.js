@@ -1,4 +1,4 @@
-module.exports = {
+// module.exports = {
     //     database: {
     //     host: 'localhost',
     //     user: 'root',
@@ -6,10 +6,22 @@ module.exports = {
     //     database: 'db_users'
     // }
 
-    database: {
-        host: 'ec2-52-204-113-104.compute-1.amazonaws.com',
-        user: 'nfuvpcisleiirt',
-        password: '8dea24ddfaa8e8ed13004381ace4af09011694341b003f0abeb0ec599dc7546c',
-        database: 'd40flvhb5ru8e7'
-    }
-};
+    // database: {
+    //     host: 'ec2-52-204-113-104.compute-1.amazonaws.com',
+    //     user: 'nfuvpcisleiirt',
+    //     password: '8dea24ddfaa8e8ed13004381ace4af09011694341b003f0abeb0ec599dc7546c',
+    //     database: 'd40flvhb5ru8e7'
+    // }
+// };
+
+const { Pool } = require('pg');
+const pool = new Pool({
+  host: 'ec2-52-204-113-104.compute-1.amazonaws.com',
+  user: 'nfuvpcisleiirt',
+  password: '8dea24ddfaa8e8ed13004381ace4af09011694341b003f0abeb0ec599dc7546c',
+  database: 'd40flvhb5ru8e7',
+  connectionString: process.env.DATABASE_URL,
+  ssl: {
+    rejectUnauthorized: false
+  }
+}); //Ojo aquí
