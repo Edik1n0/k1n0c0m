@@ -7,7 +7,10 @@
     "start": "node src",
     "dev": "nodemon src"
   },
-  "keywords": [],
+  "keywords": [
+    "example",
+    "heroku"
+  ],
   "author": "",
   "license": "ISC",
   "engines": {
