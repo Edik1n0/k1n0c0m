@@ -30,7 +30,7 @@ app.use(session({
   secret: 'k1nocomhandlebarssession',
   resave: false,
   saveUninitialized: false,
-  // store: new mySQLStore(database)
+  store: new mySQLStore(database)
 }));
 app.use(flash());
 app.use(morgan('dev'));

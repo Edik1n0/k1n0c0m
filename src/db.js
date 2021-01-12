@@ -1,38 +1,30 @@
-// const { Pool } = require('pg');
+const mysql = require('mysql');
+const { promisify } = require('util');
 
-// const pool = new Pool({
-//     host: 'ec2-52-204-113-104.compute-1.amazonaws.com',
-//     user: 'nfuvpcisleiirt',
-//     password: '8dea24ddfaa8e8ed13004381ace4af09011694341b003f0abeb0ec599dc7546c',
-//     database: 'd40flvhb5ru8e7'
-// });
+const { database } = require('./keys');
 
-// const mysql = require ('mysql');
-// const { promisify } = require('util');
+const pool = mysql.createPool(database);
 
-// const { database } = require('./keys');
+pool.getConnection((err, connection) => {
+    if (err) {
+        if (err.code === 'PROTOCOL_CONNECTION_LOST') {
+            console.error('Database connection was closed.');
+        }
+        if (err.code === 'ER_CON_COUNT_ERROR') {
+            console.error('Database has to many connections');
+        }
+        if (err.code === 'ECONNREFUSED') {
+            console.error('Database connection was refused');
+        }
+    }
 
-// const pool = mysql.createPool(database);
+    if (connection) connection.release();
+    console.log('DB is Connected');
 
-// pool.getConnection((err, connection) => {
-//     if (err) {
-//         if (err.code === 'PROTOCOL_CONECTION_LOST') {
-//             console.error ('DATABASE CONNECTION WAS CLOSED');
-//         }
-//         if (err.code === 'ER_CON_COUNT_ERROR') {
-//             console.error('DATABASE HAS TOO MANY CONNECTIONS');
-//         }
-//         if (err.code === 'ECONNREFUSED') {
-//             console.error('DATABASE CONNECTION WAS REFUSED');
-//         }
-//     }
+    return;
+});
 
-//     if (connection) connection.release();
-//     console.log('Db is connected');
-//     return;
-// });
+// Promisify Pool Querys
+pool.query = promisify(pool.query);
 
-// // Promisisfy pool querys
-// pool.query = promisify(pool.query);
-
-// module.exports = pool;
+module.exports = pool;
