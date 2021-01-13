@@ -204,6 +204,27 @@ a {
 }
 
 @media (min-width: 375px) and (max-width: 409px) {
+
+    .carousel__desk {
+        display: none;
+    }
+
+    .carousel__mob {
+        display: block;
+    }
+
+    .backg {
+        display: none;
+    }
+
+    .backg__mobile {
+        display: block;
+        width: 100%;
+        opacity: 20%;
+        position: absolute;
+        z-index: 0;
+    }
+
     .intro {
         position: relative;
         text-align: center;
@@ -235,6 +256,27 @@ a {
 }
 
 @media (min-width: 410px) and (max-width: 539px) {
+
+    .carousel__desk {
+        display: none;
+    }
+
+    .carousel__mob {
+        display: block;
+    }
+
+    .backg {
+        display: none;
+    }
+
+    .backg__mobile {
+        display: block;
+        width: 100%;
+        opacity: 20%;
+        position: absolute;
+        z-index: 0;
+    }
+
     .intro {
         position: relative;
         text-align: center;
@@ -266,6 +308,27 @@ a {
 }
 
 @media (min-width: 540px) and (max-width: 767px) {
+
+    .carousel__desk {
+        display: none;
+    }
+
+    .carousel__mob {
+        display: block;
+    }
+
+    .backg {
+        display: none;
+    }
+
+    .backg__mobile {
+        display: block;
+        width: 100%;
+        opacity: 20%;
+        position: absolute;
+        z-index: 0;
+    }
+
     .intro {
         position: relative;
         text-align: center;
