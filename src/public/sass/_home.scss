@@ -1,6 +1,30 @@
 body {
     background: $gris;
     color: $bl;
+    width: 100vw;
+    height: 100vh;
+}
+
+.masthead {
+    background: url(/img/background.jpg);
+    width: 100%;
+    height: 320%;
+    opacity: 20%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+}
+
+.masthead_nos {
+    background: url(/img/background.jpg);
+    width: 100%;
+    height: 356%;
+    opacity: 20%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
 }
 
 h1 {
@@ -152,7 +176,6 @@ a {
 }
 
 @media (min-width: 320px) and (max-width: 374px) {
-
     .carousel__desk {
         display: none;
     }
@@ -204,7 +227,6 @@ a {
 }
 
 @media (min-width: 375px) and (max-width: 409px) {
-
     .carousel__desk {
         display: none;
     }
@@ -232,12 +254,12 @@ a {
             display: block;
             .intro__img {
                 img {
-                    width: 240px;
+                    width: 100%;
                 }
             }
 
             .intro__txt {
-                width: 240px;
+                width: 100%;
             }
         }
     }
@@ -256,7 +278,6 @@ a {
 }
 
 @media (min-width: 410px) and (max-width: 539px) {
-
     .carousel__desk {
         display: none;
     }
@@ -284,12 +305,12 @@ a {
             display: block;
             .intro__img {
                 img {
-                    width: 240px;
+                    width: 100%;
                 }
             }
 
             .intro__txt {
-                width: 240px;
+                width: 100%;
             }
         }
     }
@@ -308,7 +329,6 @@ a {
 }
 
 @media (min-width: 540px) and (max-width: 767px) {
-
     .carousel__desk {
         display: none;
     }
@@ -336,12 +356,12 @@ a {
             display: block;
             .intro__img {
                 img {
-                    width: 240px;
+                    width: 100%;
                 }
             }
 
             .intro__txt {
-                width: 240px;
+                width: 100%;
             }
         }
     }
