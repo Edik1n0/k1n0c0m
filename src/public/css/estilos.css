@@ -290,6 +290,16 @@
   }
 }
 @media (min-width: 375px) and (max-width: 409px) {
+  .inner__nos {
+    display: none;
+  }
+
+  .inner__mob {
+    display: block;
+    width: 100%;
+    position: relative;
+  }
+
   .nos .container .nos__body .nos__body--item {
     text-align: center;
   }
@@ -305,6 +315,16 @@
   }
 }
 @media (min-width: 410px) and (max-width: 539px) {
+  .inner__nos {
+    display: none;
+  }
+
+  .inner__mob {
+    display: block;
+    width: 100%;
+    position: relative;
+  }
+
   .nos .container .nos__body .nos__body--item {
     text-align: center;
   }
@@ -320,6 +340,16 @@
   }
 }
 @media (min-width: 540px) and (max-width: 767px) {
+  .inner__nos {
+    display: none;
+  }
+
+  .inner__mob {
+    display: block;
+    width: 100%;
+    position: relative;
+  }
+
   .nos .container .nos__body .nos__body--item {
     text-align: center;
   }
@@ -399,6 +429,10 @@
   }
 }
 @media (min-width: 375px) and (max-width: 409px) {
+  .inner__con {
+    display: none;
+  }
+
   .ser .container {
     text-align: center;
   }
@@ -416,6 +450,10 @@
   }
 }
 @media (min-width: 410px) and (max-width: 539px) {
+  .inner__con {
+    display: none;
+  }
+
   .ser .container {
     text-align: center;
   }
@@ -433,6 +471,10 @@
   }
 }
 @media (min-width: 540px) and (max-width: 767px) {
+  .inner__con {
+    display: none;
+  }
+
   .ser .container {
     text-align: center;
   }
@@ -763,6 +805,10 @@ a:hover {
   .solicitud .container .sol__body .body__section {
     width: 100%;
   }
+
+  .inner__con {
+    display: none;
+  }
 }
 @media (min-width: 375px) and (max-width: 409px) {
   .carousel__desk {
@@ -805,9 +851,17 @@ a:hover {
   .solicitud .container .sol__body .body__section {
     width: 100%;
   }
+
+  .inner__con {
+    display: none;
+  }
 }
 @media (min-width: 410px) and (max-width: 539px) {
   .carousel__desk {
+    display: none;
+  }
+
+  .inner__con {
     display: none;
   }
 
@@ -846,6 +900,10 @@ a:hover {
   }
   .solicitud .container .sol__body .body__section {
     width: 100%;
+  }
+
+  .inner__con {
+    display: none;
   }
 }
 @media (min-width: 540px) and (max-width: 767px) {
@@ -888,6 +946,10 @@ a:hover {
   }
   .solicitud .container .sol__body .body__section {
     width: 100%;
+  }
+
+  .inner__con {
+    display: none;
   }
 }
 

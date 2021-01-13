@@ -222,6 +222,10 @@ a {
             }
         }
     }
+
+    .inner__con {
+        display: none;
+    }
 }
 
 @media (min-width: 375px) and (max-width: 409px) {
@@ -273,10 +277,18 @@ a {
             }
         }
     }
+
+    .inner__con {
+        display: none;
+    }
 }
 
 @media (min-width: 410px) and (max-width: 539px) {
     .carousel__desk {
+        display: none;
+    }
+
+    .inner__con {
         display: none;
     }
 
@@ -323,6 +335,10 @@ a {
                 }
             }
         }
+    }
+
+    .inner__con {
+        display: none;
     }
 }
 
@@ -374,5 +390,9 @@ a {
                 }
             }
         }
+    }
+
+    .inner__con {
+        display: none;
     }
 }

@@ -96,6 +96,16 @@
 }
 
 @media (min-width: 375px) and (max-width: 409px) {
+    .inner__nos {
+        display: none;
+    }
+
+    .inner__mob {
+        display: block;
+        width: 100%;
+        position: relative;
+    }
+
     .nos {
         .container {
             .nos__body {
@@ -119,6 +129,16 @@
 }
 
 @media (min-width: 410px) and (max-width: 539px) {
+    .inner__nos {
+        display: none;
+    }
+
+    .inner__mob {
+        display: block;
+        width: 100%;
+        position: relative;
+    }
+
     .nos {
         .container {
             .nos__body {
@@ -142,6 +162,16 @@
 }
 
 @media (min-width: 540px) and (max-width: 767px) {
+    .inner__nos {
+        display: none;
+    }
+
+    .inner__mob {
+        display: block;
+        width: 100%;
+        position: relative;
+    }
+
     .nos {
         .container {
             .nos__body {
