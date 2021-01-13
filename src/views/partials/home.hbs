@@ -130,8 +130,7 @@
                                     </div>
                                     <div class="serv__body">
                                         <p>
-                                            Diseños e ilustraciones personalizadas, animaciones 2D, 3D y todas
-                                            las ideas para atraer a clientes con el mejor estilo.
+                                            <i>Diseños e ilustraciones personalizadas e innovadoras</i>
                                         </p>
                                     </div>
                                 </div>
@@ -145,8 +144,7 @@
                                     </div>
                                     <div class="serv__body">
                                         <p>
-                                            Desarrollo web, software y de Apps para ofrecer la mejor Funcionalidad
-                                            a tus clientes con sistemas ágiles y con enfoque a la experiencia de usuario.
+                                            <i>Webs y aplicativos ágiles y funcionales</i>
                                         </p>
                                     </div>
                                 </div>
@@ -160,8 +158,7 @@
                                     </div>
                                     <div class="serv__body">
                                         <p>
-                                            Muestra lo mejor de tu negocio o empresa con fotografías profesionales
-                                            y retoques de alta calidad. <i>También atendemos eventos y celebraciones</i>
+                                            <i>Fotografía y retoque profesional para toda ocasión</i>
                                         </p>
                                     </div>
                                 </div>
@@ -184,8 +181,7 @@
                                     </div>
                                     <div class="serv__body">
                                         <p>
-                                            Estrategias y planes de comunicación profesionales para la comunicación
-                                            interna y externa de tu empresa/organización.
+                                            <i>Las estrategias más efectivas para su negocio</i>
                                         </p>
                                     </div>
                                 </div>
@@ -199,8 +195,7 @@
                                     </div>
                                     <div class="serv__body">
                                         <p>
-                                            Realizamos un diagnóstico completo de tu sitio web y su visibilidad
-                                            en internet para alcanzar un mejor posicionamiento en los motores de búsqueda.
+                                            <i>Sea el primero en los resultados de búsqueda</i>
                                         </p>
                                     </div>
                                 </div>
@@ -214,8 +209,7 @@
                                     </div>
                                     <div class="serv__body">
                                         <p>
-                                            Deja ver lo mejor de tu negocio/empresa con una producción audiovisual
-                                            de alta definición y con edición profesional con calidad de estudio.
+                                            <i>Producciones de alta definición y multimedia</i>
                                         </p>
                                     </div>
                                 </div>
@@ -395,34 +389,34 @@
 
         <div class="claims__fig">
             <div class="claim-a">
-                <img src="/img/claims/atencion.png" alt="" class="img__claim">
+                <img src="/img/claims/atencion.png" alt="Claim Asesoría" title="Asesoramiento | k1n0.com" class="img__claim">
                 <p class="txt__claim">Asesoramiento humano y atención personalizada.</p>
             </div>
 
             <div class="claim-a">
-                <img src="/img/claims/calidad.png" alt="" class="img__claim">
+                <img src="/img/claims/calidad.png" alt="Claim Calidad" title="Calidad | k1n0.com" class="img__claim">
                 <p class="txt__claim">Trabajo profesional y de calidad.</p>
             </div>
 
             <div class="claim-a">
-                <img src="/img/claims/tecno.png" alt="" class="img__claim">
+                <img src="/img/claims/tecno.png" alt="Claim Innova" title="Innovación | k1n0.com" class="img__claim">
                 <p class="txt__claim">Tecnologías actualizadas y funcionales.</p>
             </div>
         </div>
 
         <div class="claims__mob">
             <div class="claim-a">
-                <img src="/img/claims/atencion.png" alt="" class="img__claim">
+                <img src="/img/claims/atencion.png" alt="Claim Asesoría" title="Asesoramiento | k1n0.com" class="img__claim">
                 <p class="txt__claim">Asesoramiento humano y atención personalizada.</p>
             </div>
 
             <div class="claim-a">
-                <img src="/img/claims/calidad.png" alt="" class="img__claim">
+                <img src="/img/claims/calidad.png" alt="Claim Calidad" title="Calidad | k1n0.com" class="img__claim">
                 <p class="txt__claim">Trabajo profesional y de calidad.</p>
             </div>
 
             <div class="claim-a">
-                <img src="/img/claims/tecno.png" alt="" class="img__claim">
+                <img src="/img/claims/tecno.png" alt="Claim Innova" title="Innovación | k1n0.com" class="img__claim">
                 <p class="txt__claim">Tecnologías actualizadas y funcionales.</p>
             </div>
         </div>
@@ -443,9 +437,15 @@
 
             <div class="body__section">
                 <h3>Regístrate</h3>
+                {{#if user}}
                 <a href="/signup">
                     <img src="/img/usr-red.png" alt="" class="sol__img">
                 </a>
+                {{else}}
+                <a href="/links/add">
+                    <img src="/img/usr-red.png" alt="" class="sol__img">
+                </a>
+                {{/if}}
                 <p>Registra tus datos personales y realiza una solicitud contándonos tu caso o indicando el servicio que
                     requieres</p>
             </div>

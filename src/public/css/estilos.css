@@ -566,7 +566,7 @@ body {
   background: url(/img/background.jpg);
   opacity: 20%;
   width: 100%;
-  height: 300%;
+  height: 320%;
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -575,7 +575,7 @@ body {
 
 .masthead_nos {
   background: url(/img/background.jpg);
-  width: 90%;
+  width: 100%;
   height: 356%;
   opacity: 20%;
   background-position: center center;
