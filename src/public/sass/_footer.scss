@@ -82,3 +82,87 @@
         }
     }
 }
+
+@media (min-width: 375px) and (max-width: 409px) {
+    .container {
+        .footer {
+            padding: 10px;
+            text-align: center;
+            ul {
+                padding: 0px;
+            }
+            
+            .container {
+                display: block;
+                .footer__section {
+                    .footer__section--body {
+                        display: block;
+                        text-align: center;
+                    }
+
+                    .footer__section--footer {
+                        .section--social {
+                            display: block;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 410px) and (max-width: 539px) {
+    .container {
+        .footer {
+            padding: 10px;
+            text-align: center;
+            ul {
+                padding: 0px;
+            }
+            
+            .container {
+                display: block;
+                .footer__section {
+                    .footer__section--body {
+                        display: block;
+                        text-align: center;
+                    }
+
+                    .footer__section--footer {
+                        .section--social {
+                            display: block;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 540px) and (max-width: 767px) {
+    .container {
+        .footer {
+            padding: 10px;
+            text-align: center;
+            ul {
+                padding: 0px;
+            }
+            
+            .container {
+                display: block;
+                .footer__section {
+                    .footer__section--body {
+                        display: block;
+                        text-align: center;
+                    }
+
+                    .footer__section--footer {
+                        .section--social {
+                            display: block;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
