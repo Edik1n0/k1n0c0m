@@ -7,7 +7,8 @@
     <meta http--equiv="X-UA-Compatible" content="ie=edhge">
     {{!-- Propiedades OG --}}
     <meta property="og:title" content="k1n0c0m | Servicios web y comunicaciones en Medellín" />
-    <meta property="og:description" content="k1n0c0m | Servicios web y comunicaciones en Medellín | Comunicaciones y desarrollo web" />
+    <meta property="og:description"
+        content="k1n0c0m | Servicios web y comunicaciones en Medellín | Comunicaciones y desarrollo web" />
     <meta property="og:type" content="Web" />
     <meta property="og:url" content="https://www.k1n0.com.co/" />
     <meta property="og:site_name" content="k1n0c0m" />
@@ -17,8 +18,10 @@
     <meta property="og:local" content="es_LA" />
     <meta name="google-site-verification" content="Ljsin1yVzfgxv31NsdVzUlObTNPOn-RHEMomyfNrA1E" />
     {{!-- SEO --}}
-    <meta name="description" content="k1n0c0m | Servicios web y comunicaciones en Medellín | Comunicación digital a la medida">
-    <meta name="keywords" content="servicios web, desarrollo web, comunicaciones, publicidad, comunicacion digital, posicionamiento, seo" />
+    <meta name="description"
+        content="k1n0c0m | Servicios web y comunicaciones en Medellín | Comunicación digital a la medida">
+    <meta name="keywords"
+        content="servicios web, desarrollo web, comunicaciones, publicidad, comunicacion digital, posicionamiento, seo" />
     <meta name="author" content="k1n0">
     {{!-- Título --}}
     <title>K1n0.c0m | Servicios web y comunicaciones en Medellín</title>
@@ -32,6 +35,8 @@
         integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
     {{!-- Css --}}
     <link rel="stylesheet" href="/css/estilos.css">
+    {{!-- Captcha --}}
+    <script src="https://www.google.com/recaptcha/api.js?render=6LcAQioaAAAAABTVMAllg8UW0swpY3VaeDX9GEOv"></script>
     {{!-- Favicon --}}
     <link rel="icon" type="image/ico" href="/img/favicon-ico-kino.ico">
 
@@ -65,7 +70,40 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
         crossorigin="anonymous"></script>
+    <script>
+        document.getElementById('verifyForm').addEventListener('submit', runVerify);
+        function runVerify(e) {
+            e.preventDefault();
+            runCaptcha();
+        }
 
+        function runCaptcha() {
+            grecaptcha.execute('6LcAQioaAAAAABTVMAllg8UW0swpY3VaeDX9GEOv', { action: 'submit' }).then(function (token) {
+                const fullname = document.querySelector('#fullname');
+                const username = document.querySelector('#username');
+                const password = document.querySelector('#password');
+                const phone = document.querySelector('#phone');
+                const email = document.querySelector('#email');
+                const captcha = token;
+
+                sendData(fullname,username,password,phone,email,captcha);
+            });
+        }
+
+        function sendData(fullname,username,password,phone,email,captcha){
+            const info = JSON.stringify({fullname:fullname, username:username, password:password, phone:phone, email:email, captcha:captcha});
+            fetch('/verify',{
+                method:'POST',
+                headers: {
+                    'Accept': 'application/json, text/plain, */*',
+                    'Content-type': 'application/json'
+                },
+                body.info
+            }).then((res)=>res.json()).then((data)=>{
+                alert('msg: ' + data.msg + ', score' + data.score);
+            });
+        };
+    </script>
 </body>
 
 </html>

@@ -1,4 +1,7 @@
 const express = require('express');
+const bodyParser = require('body-parser');
+const request = require('request');
+const secretKey = '6LcAQioaAAAAAPzVsOtXMQkWIST80eeXVuWhJdzo';
 const morgan = require('morgan');
 const exphbs = require('express-handlebars');
 const path = require('path');
@@ -25,6 +28,25 @@ app.engine('.hbs', exphbs({
 }));
 app.set('view engine', '.hbs');
 
+app.post('/verify', () => {
+  if(!req.body.captcha){
+      res.json({'msg':'Captcha token is undefined'});
+  }
+  const verifyUrl = `https://www.google.com/recaptcha/api/siteverify?secret=${secretKey}&response=${req.body.captcha}`;
+
+  request(verifyUrl, (err,response,body)=>{
+    if(err){
+      console.log(err);
+    }
+    body = JSON.parse(body);
+    if(!body.success || body.score < 0.4){
+      return res.json({'msg':'You might be a robot, sorry!! You are banned!', 'score':body.score});
+    }
+
+    return res.json({'msg':'You have been verified! You may proceed', 'score':body.score});
+  });
+});
+
 //Middleware
 app.use(session({
   secret: 'k1nocomhandlebarssession',
@@ -33,6 +55,8 @@ app.use(session({
   store: new mySQLStore(database)
 }));
 app.use(flash());
+// app.use(bodyParser.urlencoded({ extended: false }));
+// app.use(bodyParser.json());
 app.use(morgan('dev'));
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
