@@ -70,7 +70,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
         crossorigin="anonymous"></script>
-    {{!-- <script>
+    <script>
         document.getElementById('verifyForm').addEventListener('submit', runVerify);
         function runVerify(e) {
             e.preventDefault();
@@ -86,24 +86,24 @@
                 const email = document.querySelector('#email');
                 const captcha = token;
 
-                sendData(fullname,username,password,phone,email,captcha);
+                sendData(fullname, username, password, phone, email, captcha);
             });
         }
 
-        function sendData(fullname,username,password,phone,email,captcha){
-            const info = JSON.stringify({fullname:fullname, username:username, password:password, phone:phone, email:email, captcha:captcha});
-            fetch('/verify',{
-                method:'POST',
+        function sendData(fullname, username, password, phone, email, captcha) {
+            const info = JSON.stringify({ fullname: fullname, username: username, password: password, phone: phone, email: email, captcha: captcha });
+            fetch('/verify', {
+                method: 'POST',
                 headers: {
                     'Accept': 'application/json, text/plain, */*',
                     'Content-type': 'application/json'
                 },
                 body.info
-            }).then((res)=>res.json()).then((data)=>{
+            }).then((res) => res.json()).then((data) => {
                 alert('msg: ' + data.msg + ', score' + data.score);
             });
         };
-    </script> --}}
+    </script>
 </body>
 
 </html>
