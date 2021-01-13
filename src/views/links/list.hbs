@@ -17,12 +17,17 @@
             </div>
         </div>
         {{else}}
-            <div class="col-md-4 mx-auto">
-                <div class="card card-body text-center">
-                    <p style="color: black;">No hay servicios pendientes</p>
-                    <a class="ados" href="/links/add">Crea una solicitud!</a>
-                </div>
+        <div class="col-md-4 mx-auto">
+            <div class="card card-body text-center">
+                <p style="color: black;">No hay servicios pendientes</p>
+                <a class="ados" href="/links/add">Crea una solicitud!</a>
             </div>
+        </div>
         {{/each}}
     </div>
+    {{#if links}}
+    <div class="container mt-4" style="text-align: center;">
+        <a href="/links/add" class="btn btn-danger">Solicita otro servicio</a>
+    </div>
+    {{/if}}
 </div>
