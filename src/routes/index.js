@@ -22,7 +22,7 @@ router.get('/privacy', (req, res) => {
 });
 
 router.get('/sitemap', (req, res) => {
-    res.render('./sitemap.xml');
+    res.render('./sitemap');
 });
 
 router.get('/control', (req, res) => {
@@ -30,7 +30,7 @@ router.get('/control', (req, res) => {
 });
 
 router.get('/sitemap.xml', function(req, res) {
-    res.sendFile('C:/Users/user/Documents/GitHub/k1n0c0m/src/views/sitemap.xml');
+    res.sendFile('/sitemap.xml');
 });
 
 module.exports = router;
