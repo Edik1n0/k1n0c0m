@@ -29,8 +29,8 @@ router.get('/control', (req, res) => {
     res.render('./control/');
 });
 
-router.get('/error-404', (req, res) => {
-    res.render('./layouts/404');
+router.get('/sitemap.xml', function(req, res) {
+    res.sendFile('https://www.k1n0.com.co/sitemap.xml');
 });
 
 module.exports = router;
