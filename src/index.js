@@ -29,21 +29,21 @@ app.engine('.hbs', exphbs({
 app.set('view engine', '.hbs');
 
 app.post('/verify', () => {
-  if(!req.body.captcha){
-      res.json({'msg':'Captcha token is undefined'});
+  if (!req.body.captcha) {
+    res.json({ 'msg': 'Captcha token is undefined' });
   }
   const verifyUrl = `https://www.google.com/recaptcha/api/siteverify?secret=${secretKey}&response=${req.body.captcha}`;
 
-  request(verifyUrl, (err,response,body)=>{
-    if(err){
+  request(verifyUrl, (err, response, body) => {
+    if (err) {
       console.log(err);
     }
     body = JSON.parse(body);
-    if(!body.success || body.score < 0.4){
-      return res.json({'msg':'You might be a robot, sorry!! You are banned!', 'score':body.score});
+    if (!body.success || body.score < 0.4) {
+      return res.json({ 'msg': 'You might be a robot, sorry!! You are banned!', 'score': body.score });
     }
 
-    return res.json({'msg':'You have been verified! You may proceed', 'score':body.score});
+    return res.json({ 'msg': 'You have been verified! You may proceed', 'score': body.score });
   });
 });
 

@@ -25,4 +25,8 @@ router.get('/sitemap', (req, res) => {
     res.render('./layouts/sitemap');
 });
 
+router.get('/error-404', (req, res) => {
+    res.render('./layouts/404');
+});
+
 module.exports = router;
