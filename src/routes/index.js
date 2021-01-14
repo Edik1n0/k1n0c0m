@@ -29,8 +29,4 @@ router.get('/control', (req, res) => {
     res.render('./control/');
 });
 
-router.get('/sitemap.xml', function(req, res) {
-     res.sendFile('/src/sitemap.xml');
-});
-
 module.exports = router;
