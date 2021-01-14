@@ -47,7 +47,7 @@ app.post('/verify', () => {
   });
 });
 
-//Middleware
+//Middlewares
 app.use(session({
   secret: 'k1nocomhandlebarssession',
   resave: false,
