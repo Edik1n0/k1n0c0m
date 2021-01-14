@@ -13,8 +13,16 @@ router.get('/servicios', (req, res) => {
     res.render('./layouts/servicios');
 });
 
-router.get('/contacto', (req, res) => {
-    res.render('./layouts/contacto');
+router.get('/cookies', (req, res) => {
+    res.render('./layouts/cookies');
+});
+
+router.get('/privacy', (req, res) => {
+    res.render('./layouts/privacy');
+});
+
+router.get('/sitemap', (req, res) => {
+    res.render('./layouts/sitemap');
 });
 
 module.exports = router;
