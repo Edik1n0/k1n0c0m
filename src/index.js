@@ -18,6 +18,7 @@ require('./lib/passport');
 
 //Settings
 app.set('port', process.env.PORT || 4000);
+app.set('sitemap', path.join(__dirname, 'sitemap'));
 app.set('views', path.join(__dirname, 'views'));
 app.engine('.hbs', exphbs({
   defaultLayout: 'main',
@@ -55,8 +56,6 @@ app.use(session({
   store: new mySQLStore(database)
 }));
 app.use(flash());
-// app.use(bodyParser.urlencoded({ extended: false }));
-// app.use(bodyParser.json());
 app.use(morgan('dev'));
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
