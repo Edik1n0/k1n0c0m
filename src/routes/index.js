@@ -30,7 +30,7 @@ router.get('/control', (req, res) => {
 });
 
 router.get('/sitemap.xml', function(req, res) {
-    res.sendFile('/sitemap.xml');
+    res.sendFile('./app/sitemap.xml');
 });
 
 module.exports = router;
