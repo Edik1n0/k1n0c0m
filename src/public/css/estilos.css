@@ -1,5 +1,5 @@
 .container .footer {
-  padding: 20px 120px 20px 0px;
+  padding: 20px 120px 20px 20px;
   margin-top: 60px;
   position: relative;
 }
@@ -9,6 +9,10 @@
 }
 .container .footer .container .footer__section {
   text-align: center;
+}
+.container .footer .container .footer__section .footer__section--footer .address {
+  list-style: none;
+  padding: 0px;
 }
 .container .footer .container .footer__section .footer__section--footer .section--social {
   list-style: none;
@@ -36,9 +40,15 @@
 .container .footer .container .footer__section .footer__section--title {
   margin-bottom: 20px;
 }
-.container .footer__right {
+.container .container {
+  display: flex;
+  justify-content: center;
+}
+.container .container .footer__right {
   text-align: center;
+  margin-left: 80px;
   position: relative;
+  width: 540px;
 }
 
 @media (min-width: 320px) and (max-width: 374px) {
@@ -212,6 +222,61 @@
     margin: 20px;
   }
 }
+.cookies,
+.privacy {
+  margin-top: 80px;
+}
+.cookies .container,
+.privacy .container {
+  margin-top: 60px;
+}
+.cookies .container .cookies__header,
+.cookies .container .privacy__header,
+.privacy .container .cookies__header,
+.privacy .container .privacy__header {
+  margin-top: 40px;
+}
+.cookies .container .cookies__header .container,
+.cookies .container .privacy__header .container,
+.privacy .container .cookies__header .container,
+.privacy .container .privacy__header .container {
+  margin-top: 80px;
+}
+.cookies .container .container,
+.privacy .container .container {
+  display: flex;
+  justify-content: center;
+}
+.cookies .container .container .privacy__body,
+.privacy .container .container .privacy__body {
+  width: 80%;
+}
+
+.sitemap {
+  margin-top: 80px;
+}
+.sitemap .container {
+  margin-top: 60px;
+}
+.sitemap .container .sitemap__header {
+  text-align: center;
+}
+.sitemap .container .container {
+  margin-top: 60px;
+  padding-left: 120px;
+  display: block;
+}
+.sitemap .container .container .bodymap {
+  margin-top: 60px;
+}
+.sitemap .container .container .bodymap .sitemap__list {
+  padding: 20px;
+}
+.sitemap .container .container .bodymap .sitemap__list .sitemap__item {
+  margin: 20px;
+  padding: 8px;
+}
+
 .inner__nos {
   width: 100%;
   position: relative;

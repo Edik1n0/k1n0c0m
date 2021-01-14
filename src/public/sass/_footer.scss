@@ -1,6 +1,6 @@
 .container {
     .footer {
-        padding: 20px 120px 20px 0px;
+        padding: 20px 120px 20px 20px;
         margin-top: 60px;
         position: relative;
         .container {
@@ -9,6 +9,10 @@
             .footer__section {
                 text-align: center;
                 .footer__section--footer {
+                    .address {
+                        list-style: none;
+                        padding: 0px;
+                    }
                     .section--social {
                         list-style: none;
                         display: flex;
@@ -49,9 +53,15 @@
             }
         }
     }
-    .footer__right {
-        text-align: center;
-        position: relative;
+    .container {
+        display: flex;
+        justify-content: center;
+        .footer__right {
+            text-align: center;
+            margin-left: 80px;
+            position: relative;
+            width: 540px;
+        }
     }
 }
 
