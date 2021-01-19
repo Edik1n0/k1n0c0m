@@ -14,16 +14,19 @@
 
         gtag('config', 'G-JLP0S9FLPD');
     </script>
+    {{!-- API de Google --}}
+    <meta name="google-signin-client_id"
+        content="Y1055161800484-756ol84aireh1398a160345sniq95i75.apps.googleusercontent.com">
     {{!-- Propiedades OG --}}
     <meta property="og:title" content="k1n0c0m | Marketing Digital y Comunicación Digital en Medellín">
-    <meta property="og:type" content="Web">
+    <meta property="og:type" content="website">
     <meta property="og:url" content="https://www.k1n0.com.co/">
     <meta property="og:image"
         content="https://scontent.feoh1-1.fna.fbcdn.net/v/t1.0-9/139661015_1117533562021933_478162099764357035_n.jpg?_nc_cat=109&ccb=2&_nc_sid=e3f864&_nc_eui2=AeEuBWbqhTSivV9FcfxXoRG5zfFyRZrAOMrN8XJFmsA4ysASADOzmr3BpZAGkDr3kM9kw7yCwe1n6wxmhBoFmYFV&_nc_ohc=p5398yM_PLwAX-Y3cpL&_nc_ht=scontent.feoh1-1.fna&oh=bb433948d431c1675e1b65c5a7dd6603&oe=60288BF6">
     <meta property="og:image:secure_url"
         content="https://scontent.feoh1-1.fna.fbcdn.net/v/t1.0-9/139661015_1117533562021933_478162099764357035_n.jpg?_nc_cat=109&ccb=2&_nc_sid=e3f864&_nc_eui2=AeEuBWbqhTSivV9FcfxXoRG5zfFyRZrAOMrN8XJFmsA4ysASADOzmr3BpZAGkDr3kM9kw7yCwe1n6wxmhBoFmYFV&_nc_ohc=p5398yM_PLwAX-Y3cpL&_nc_ht=scontent.feoh1-1.fna&oh=bb433948d431c1675e1b65c5a7dd6603&oe=60288BF6">
     <meta property="og:image:width" content="851">
-    <meta property="og:image:height" content="315">   
+    <meta property="og:image:height" content="315">
     <meta property="og:image:type" content="image/jpg">
     <meta property="og:local" content="es_LA">
     <meta property="og:description"
@@ -38,6 +41,7 @@
         content="marketing digital, comunicación digital en Medellín, servicios web, desarrollo web, comunicaciones, publicidad, comunicacion digital, posicionamiento, seo, posicionamiento,
         paginas web, aplicaciones, apps, fotografía, video, animaciones, planes de comunicaciones, planes de comunicacion">
     <meta name="author" content="k1n0">
+    {{!-- Schema --}}
     <script
         type="application/ld+json">{"@context": "https://schema.org","@type": "Organization","url": "https://www.k1n0.com.co/","contactPoint":[{"@type": "ContactPoint","telephone": "+57-313-588-7171","contactType": "customer service"}],"address": {"@type": "PostalAddress","addressLocality": "Medellín, Colombia","postalCode": "050024","streetAddress": "Calle 1B #66-94"},"email": "kinotrance@gmail.com","faxNumber": "( 33 1) 42 68 53 01","member": [{"@type": "Organization"}],"alumni": [{"@type": "Person","name": "Edison"}],"name": "k1n0c0m","telephone": "( 57 4) 313 588 7171"}</script>
     {{!-- Título --}}
@@ -113,6 +117,16 @@
             });
         };
     </script>
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+    <script>
+        function signOut() {
+            var auth2 = gapi.auth2.getAuthInstance();
+            auth2.signOut().then(function () {
+                console.log('User signed out.');
+            });
+        }
+    </script>
+    <script src="../../public/js/goauth.js">require('/js/goauth');</script>
 </body>
 
 </html>
