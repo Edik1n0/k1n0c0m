@@ -442,6 +442,9 @@
 .ser .container .ser__body {
   margin-top: 80px;
 }
+.ser .container .ser__body .container {
+  display: block;
+}
 .ser .container .ser__body .container .ser__item {
   margin-top: 60px;
   display: flex;
