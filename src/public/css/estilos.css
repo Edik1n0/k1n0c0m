@@ -667,6 +667,50 @@
     width: 80px;
   }
 }
+.diseno {
+  margin-top: 80px;
+  position: relative;
+}
+.diseno ul {
+  list-style: none;
+  padding: 0px;
+}
+.diseno .container {
+  margin-top: 40px;
+}
+.diseno .container .diseno__title {
+  margin-top: 40px;
+}
+.diseno .container .diseno__body {
+  margin-top: 60px;
+}
+.diseno .container .diseno__body .ser__subtitle {
+  margin-top: 40px;
+}
+.diseno .container .diseno__body .container {
+  margin-bottom: 60px;
+}
+.diseno .container .diseno__body .container .diseno__body--dos .carousel .carousel-inner .carousel-item .ser__item {
+  margin-top: 60px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.diseno .container .diseno__body .container .diseno__body--dos .carousel .carousel-inner .carousel-item .ser__item .serv__img {
+  position: relative;
+}
+.diseno .container .diseno__body .container .diseno__body--dos .carousel .carousel-inner .carousel-item .ser__item .serv__img img {
+  width: 520px;
+}
+.diseno .container .diseno__body .container .diseno__body--dos .carousel .carousel-inner .carousel-item .ser__item .serv__txt {
+  display: block;
+  width: 50%;
+}
+.diseno .container .diseno__body .container .diseno__body--dos .carousel .carousel-inner .carousel-item .ser__item .serv__txt .serv__icons img {
+  height: 40px;
+  margin: 20px;
+}
+
 body {
   background: #212529;
   color: #fff;

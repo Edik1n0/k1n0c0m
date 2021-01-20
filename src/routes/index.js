@@ -21,6 +21,14 @@ router.get('/privacy', (req, res) => {
     res.render('./layouts/privacy');
 });
 
+router.get('/servicios/diseno', (req, res) => {
+    res.render('./servicios/diseno');
+});
+
+router.get('/servicios/web', (req, res) => {
+    res.render('./servicios/web');
+});
+
 router.get('/sitemap', (req, res) => {
     res.render('./sitemap');
 });
