@@ -5,10 +5,6 @@ router.get('/', (req, res) => {
     res.render('./partials/home');
 });
 
-router.get('/sitemap', (req, res) => {
-    res.render('./layouts/sitemap.xml');
-});
-
 router.get('/nosotros', (req, res) => {
     res.render('./layouts/nosotros');
 });
@@ -34,7 +30,7 @@ router.get('/servicios/web', (req, res) => {
 });
 
 router.get('/sitemap', (req, res) => {
-    res.render('./sitemap');
+    res.render('layouts/sitemap');
 });
 
 router.get('/control', (req, res) => {
