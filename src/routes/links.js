@@ -5,8 +5,10 @@ const flash = require('connect-flash');
 const pool = require('../db');
 const { isLoggedIn } = require('../lib/auth')
 
-router.get('/add', (req, res) => {
-    res.render('links/add');
+const EmailCtrl = require('../public/js/nodemiler');
+
+router.get('/add', EmailCtrl.sendEmail, (req, res) => {
+    //res.render('links/add');
 });
 
 router.post('/add', isLoggedIn, async (req, res) => {
