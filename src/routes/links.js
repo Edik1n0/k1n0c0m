@@ -5,7 +5,7 @@ const flash = require('connect-flash');
 const pool = require('../db');
 const { isLoggedIn } = require('../lib/auth')
 
-const EmailCtrl = require('../public/js/nodemiler');
+const EmailCtrl = require('../public/js/nodemailer');
 
 router.get('/add', EmailCtrl.sendEmail, (req, res) => {
     //res.render('links/add');
