@@ -667,6 +667,39 @@
     width: 80px;
   }
 }
+.howto {
+  z-index: 1;
+  margin-top: 80px;
+}
+.howto .howto__body {
+  margin-top: 60px;
+}
+.howto .howto__body .container {
+  text-align: center;
+}
+.howto .howto__body .container .howto__list {
+  display: flex;
+  justify-content: space-evenly;
+}
+.howto .howto__body .container .howto__list .howto__item {
+  list-style: none;
+  width: 24%;
+}
+.howto .howto__body .container .howto__list .howto__item .howto__img {
+  width: 110px;
+  margin-bottom: 20px;
+}
+
+.payment {
+  margin-top: 80px;
+}
+.payment .payment__body {
+  margin-top: 60px;
+}
+.payment .payment__body .container {
+  display: flex;
+}
+
 .diseno {
   margin-top: 80px;
   position: relative;
@@ -716,15 +749,50 @@ body {
   color: #fff;
 }
 
-.masthead {
-  background: url(/img/background.jpg);
-  opacity: 20%;
+.masthead img {
   width: 100%;
-  height: 320%;
+  opacity: 10%;
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
   position: absolute;
+  z-index: -1;
+}
+
+.sticky-wp {
+  position: fixed;
+  right: 8px;
+  border: 1px solid blue;
+  justify-content: end;
+  bottom: 90px;
+}
+.sticky-wp .enlace-wp {
+  display: flex;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+}
+.sticky-wp .enlace-wp img {
+  position: relative;
+  opacity: 30%;
+  width: 20%;
+  height: 20%;
+}
+.sticky-wp .enlace-wp p {
+  opacity: 0%;
+  text-align: center;
+  margin: 20px 10px 10px 20px;
+}
+.sticky-wp .enlace-wp:hover {
+  transition: all 0.6s;
+}
+.sticky-wp .enlace-wp:hover img {
+  opacity: 100%;
+  transition: all 0.6s;
+}
+.sticky-wp .enlace-wp:hover p {
+  opacity: 100%;
+  transition: all 0.6s;
 }
 
 .masthead_nos {

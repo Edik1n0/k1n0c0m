@@ -4,14 +4,54 @@ body {
 }
 
 .masthead {
-    background: url(/img/background.jpg);
-    opacity: 20%;
-    width: 100%;
-    height: 320%;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: absolute;
+    img {
+        width: 100%;
+        opacity: 10%;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: absolute;
+        z-index: -1;
+    }
+}
+
+.sticky-wp {
+    position: fixed;
+    right: 8px;
+    border: 1px solid blue;
+    justify-content: end;
+    bottom: 90px;
+
+    .enlace-wp {
+        display: flex;
+        color: white;
+        text-align: center;
+        text-decoration: none;
+        img {
+            position: relative;
+            opacity: 30%;
+            width: 20%;
+            height: 20%;
+        }
+        p {
+            opacity: 0%;
+            text-align: center;
+            margin: 20px 10px 10px 20px;
+        }
+
+        &:hover {
+            transition: all .6s;
+            img {
+                opacity: 100%;
+                transition: all .6s;
+            }
+
+            p {
+                opacity: 100%;
+                transition: all .6s;
+            }
+        }
+    }
 }
 
 .masthead_nos {
