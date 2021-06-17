@@ -28,7 +28,7 @@
 -- -- Estructura de tabla para la tabla `links`
 -- --
 
--- CREATE TABLE `links` (
+--  CREATE TABLE `links` (
 --   `id` int(11) NOT NULL,
 --   `title` varchar(150) NOT NULL,
 --   `url` varchar(255) NOT NULL,
